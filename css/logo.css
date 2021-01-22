@@ -1,0 +1,21 @@
+.logo {
+  font-family: Raleway, Oleo Script, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.contact-box .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--primarycolor);
+}
+
+.capital-head,
+.capital-footer {
+  color: var(--accentcolor);
+}
+/*# sourceMappingURL=logo.css.map */

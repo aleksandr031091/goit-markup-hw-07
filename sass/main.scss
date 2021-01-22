@@ -1,0 +1,34 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './base/common';
+@import './base/conteiner';
+@import './base/section';
+
+@import './components/modal';
+@import './components/btn';
+@import './components/social.scss';
+@import './components/form';
+@import './components/title';
+@import './components/contact';
+@import './components/main-nav';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/activity';
+@import './layout/tim';
+@import './layout/company.scss';
+@import './layout/portfolio';
+@import './layout/footer';
+
+/*===============заголовок===============*/
+/*===============секциz-преимущества===============*/
+/*===============вид-деятельности===============*/
+/*===============наша-команда===============*/
+/*===============постоянные клиенты===============*/
+/*===============партфолио===============*/
+/*===============подвал===============*/
+/*===============соц сети===============*/
+/*===============кнопка===============*/
+/*===============модальное окно===============*/

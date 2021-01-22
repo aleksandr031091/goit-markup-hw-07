@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,AAAC,CACJ,WAAW,CAAE,gCAAgC,CAC7C,WAAW,CAAE,IAAI,CACjB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,GAAG,CAChB,cAAc,CAAE,MAAM,CACtB,KAAK,CAAE,OAAO,CACd,eAAe,CAAE,IAAI,CAOtB,AALC,AAAA,YAAY,CATd,KAAK,AASY,CACb,OAAO,CAAE,YAAY,CACrB,aAAa,CAAE,IAAI,CACnB,KAAK,CAAE,mBAAmB,CAC3B,AAEH,AAAA,aAAa,CACb,eAAe,AAAC,CACd,KAAK,CAAE,kBAAkB,CAC1B",
+    "sources": [
+        "../sass/components/logo.scss"
+    ],
+    "names": [],
+    "file": "logo.min.css"
+}

@@ -1,0 +1,21 @@
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-head {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

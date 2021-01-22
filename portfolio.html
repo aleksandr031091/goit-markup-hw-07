@@ -13,8 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./index.html" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body class="page">
@@ -62,18 +61,18 @@
         <h1 class="visually-hidden">Портфолио</h1>
         <div class="container">
           <ul class="list portfolio-nav">
-            <li class="items"><button class="button secondary">Все</button></li>
+            <li class="items"><button class="button-secondary">Все</button></li>
             <li class="items">
-              <button class="button secondary">Веб-сайты</button>
+              <button class="button-secondary">Веб-сайты</button>
             </li>
             <li class="items">
-              <button class="button secondary">Приложения</button>
+              <button class="button-secondary">Приложения</button>
             </li>
             <li class="items">
-              <button class="button secondary">Дизайн</button>
+              <button class="button-secondary">Дизайн</button>
             </li>
             <li class="items">
-              <button class="button secondary">Маркетинг</button>
+              <button class="button-secondary">Маркетинг</button>
             </li>
           </ul>
           <ul class="list portfolio-box">
@@ -360,7 +359,12 @@
               class="input-subscribe"
               placeholder="E-mail"
             />
-            <button type="submit" class="button-subscribe">Подписаться</button>
+            <button type="submit" class="button button-subscribe">
+              Подписаться
+              <svg class="button-subscribe-svg" width="24" height="24">
+                <use href="./img/svg/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
