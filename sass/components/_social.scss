@@ -28,11 +28,17 @@
 
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 2050ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     background-color: var(--accentcolor);
+
+    & .social-svg-person,
+    & .social-svg-person {
+      fill: var(--primarycolor);
+    }
   }
 }
 .social-svg {
@@ -47,10 +53,4 @@
   height: 20px;
 
   fill: #afb1b8;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-link:hover .social-svg-person,
-.social-link:focus .social-svg-person {
-  fill: var(--primarycolor);
 }

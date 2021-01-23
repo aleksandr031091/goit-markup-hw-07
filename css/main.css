@@ -188,7 +188,7 @@ img {
   padding: 6px 22px;
   color: #212121;
   background-color: #f5f4fa;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-secondary:hover, .button-secondary:focus {
@@ -225,11 +225,17 @@ img {
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 2050ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover, .social-link:focus {
   background-color: var(--accentcolor);
+}
+
+.social-link:hover .social-svg-person,
+.social-link:hover .social-svg-person, .social-link:focus .social-svg-person,
+.social-link:focus .social-svg-person {
+  fill: var(--primarycolor);
 }
 
 .social-svg {
@@ -242,12 +248,6 @@ img {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-link:hover .social-svg-person,
-.social-link:focus .social-svg-person {
-  fill: var(--primarycolor);
 }
 
 .modal-form {
@@ -490,7 +490,7 @@ img {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .link:hover, .auth-nav .link:focus {
@@ -793,7 +793,7 @@ img {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 2250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-logo:hover, .company-logo:focus {
@@ -801,6 +801,7 @@ img {
 }
 
 .company-logo:hover .icon,
+.company-logo:hover .icon, .company-logo:focus .icon,
 .company-logo:focus .icon {
   fill: var(--accentcolor);
 }

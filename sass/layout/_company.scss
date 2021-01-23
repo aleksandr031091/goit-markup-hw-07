@@ -28,17 +28,18 @@
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     border-color: var(--accentcolor);
-  }
 
-  &:hover .icon,
-  &:focus .icon {
-    fill: var(--accentcolor);
+    & .icon,
+    & .icon {
+      fill: var(--accentcolor);
+    }
   }
 }
 .icon {
