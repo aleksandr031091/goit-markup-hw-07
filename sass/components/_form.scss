@@ -7,10 +7,11 @@
   padding-right: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
-}
-.modal-form .button {
-  margin-right: auto;
-  margin-left: auto;
+
+  & .button {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .subtitle-modal {
@@ -40,12 +41,7 @@
   transform: translate(0, -50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field-imput:focus {
-  border-color: #2196f3;
-}
-.form-field-imput:focus + .modal-svg-feild {
-  fill: #2196f3;
-}
+
 .form-field-imput {
   display: block;
   padding-left: 42px;
@@ -56,6 +52,13 @@
   border-radius: 4px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: #2196f3;
+  }
+  &:focus + .modal-svg-feild {
+    fill: #2196f3;
+  }
 }
 
 .form-area {
@@ -80,10 +83,12 @@
   outline: none;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: #2196f3;
+  }
 }
-.form-area-feild:focus {
-  border-color: #2196f3;
-}
+
 .form-policy {
   margin-bottom: 30px;
 }
@@ -104,13 +109,15 @@
   border-radius: 4px;
   background-color: var(--primarycolor);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .visually-hidden:checked + & {
+    background-image: url('../img/svg/check.svg');
+    background-color: #2196f3;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-.visually-hidden:checked + .checkin::before {
-  background-image: url('../img/svg/check.svg');
-  background-color: #2196f3;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 .link-policiti {
   color: #2196f3;
 }
@@ -122,4 +129,45 @@
   background-size: contain;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tittle-subscribe {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primarycolor);
+}
+.subscribe-form {
+  display: flex;
+
+  & .button-subscribe {
+    margin-left: 10px;
+  }
+}
+.button-subscribe-svg {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+.input-subscribe {
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+
+  color: var(--primarycolor);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: #2196f3;
+  }
 }

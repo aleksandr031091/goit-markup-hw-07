@@ -3,15 +3,16 @@
 
 @import './base/common';
 @import './base/conteiner';
-@import './base/section';
+@import './base/sections.scss';
 
 @import './components/modal';
 @import './components/btn';
-@import './components/social.scss';
+@import './components/social';
 @import './components/form';
 @import './components/title';
 @import './components/contact';
 @import './components/main-nav';
+@import './components/logo.scss';
 
 @import './layout/header';
 @import './layout/hero';

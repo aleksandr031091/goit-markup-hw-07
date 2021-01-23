@@ -2,26 +2,35 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  & .items:not(:last-child) {
+    margin-right: 8px;
+  }
 }
-.portfolio-nav .items:not(:last-child) {
-  margin-right: 8px;
-}
+
 .portfolio-box {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+
+  & .items {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: calc((100% / 3) - 30px);
+  }
+  & .link:focus,
+  & .link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  & .link:focus .box-overlay,
+  & .link:hover .box-overlay {
+    transform: translateY(0);
+  }
 }
-.portfolio-box .items {
-  margin-top: 30px;
-  margin-left: 30px;
-  width: calc((100% / 3) - 30px);
-}
-.portfolio-box .section-link:focus,
-.portfolio-box .section-link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .items-descriptions {
   padding-top: 20px;
   padding-right: 24px;
@@ -33,16 +42,7 @@
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-.section-title-project {
-  margin-top: 0;
-  margin-bottom: 4px;
 
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
 .section-product-project {
   margin-top: 0;
   margin-bottom: 0;
@@ -79,9 +79,4 @@
   font-size: 18px;
   line-height: 1.555;
   letter-spacing: 0.03em;
-}
-
-.portfolio-box .section-link:focus .box-overlay,
-.portfolio-box .section-link:hover .box-overlay {
-  transform: translateY(0);
 }
