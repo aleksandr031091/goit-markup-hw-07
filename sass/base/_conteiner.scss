@@ -1,16 +1,66 @@
 .container {
-  width: 1200px;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include for-size(mobile) {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .container-head {
-  display: flex;
-  align-items: center;
+  @include for-size(mobile) {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include for-size(tablet) {
+    display: flex;
+    align-items: center;
+
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+  }
 }
 .container-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  @include for-size(mobile) {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 1200px;
+  }
 }
